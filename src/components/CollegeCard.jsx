@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, School, Star } from 'lucide-react';
+import { MapPin, School, Star, FileText } from 'lucide-react';
 import { parseMarkdownLinks } from '../utils/textParser';
 
 export default function CollegeCard({ college }) {
@@ -23,9 +23,21 @@ export default function CollegeCard({ college }) {
             className="college-hero-img" 
           />
           <div className="college-hero-overlay">
-            <span className={`fit-pill ${getFitPillClass(college.fitCategory)}`}>
-              {college.fitCategory}
-            </span>
+            <div className="college-hero-badges">
+              <span className={`fit-pill ${getFitPillClass(college.fitCategory)}`}>
+                {college.fitCategory}
+              </span>
+              {college.applicationRound && (
+                <span className={`round-pill round-${college.applicationRound.toLowerCase()}`}>
+                  Round: {college.applicationRound}
+                </span>
+              )}
+              {college.supplementalEssays && (
+                <span className="essays-pill">
+                  <FileText size={12} /> Essays: {college.supplementalEssays}
+                </span>
+              )}
+            </div>
             <h2 className="college-name-plate">{college.name}</h2>
             <div className="college-loc-type">
               <span>
@@ -47,6 +59,21 @@ export default function CollegeCard({ college }) {
           <div className="quick-stat-box">
             <div className="quick-stat-label">Student:Faculty Ratio</div>
             <div className="quick-stat-val">{college.quickStats.studentFacultyRatio || "8:1"}</div>
+          </div>
+          <div className="quick-stat-box">
+            <div className="quick-stat-label">Application Round</div>
+            <div className="quick-stat-val">
+              <span className={`round-badge-stat round-${(college.applicationRound || 'RD').toLowerCase()}`}>
+                {college.applicationRound || 'RD'}
+              </span>
+            </div>
+          </div>
+          <div className="quick-stat-box">
+            <div className="quick-stat-label">Supplemental Essays</div>
+            <div className="quick-stat-val essays-val">
+              <FileText size={14} style={{ color: 'var(--color-target)' }} />
+              <span>{college.supplementalEssays || '0/3'}</span>
+            </div>
           </div>
           <div className="quick-stat-box">
             <div className="quick-stat-label">Undergrad Size</div>

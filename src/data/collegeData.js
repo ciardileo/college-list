@@ -10,7 +10,7 @@ export const profileData = {
   title: "Aspiring Computer Scientist",
   classOf: "Class of 2031",
   advisersNotes: "EducationUSA Opportunity",
-  avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHYO1nBVN2_nA/profile-displayphoto-shrink_800_800/B4DZcNp10uGcAc-/0/1748280762392?e=1785974400&v=beta&t=qrVZab0UaxWuVLhc3Ua2vP9RVsZ1T5S9JN74AjVzN0U",
+  avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHYO1nBVN2_nA/profile-displayphoto-shrink_800_800/B4DZcNp10uGcAc-/0/1748280762392?e=1791417600&v=beta&t=vit5G2mraQQMERWhALosCeYeQNjFaJMzvnMUrjPLKhw",
   bio: "",
   stats: [
     { label: "GPA", value: "~3.7" },
@@ -79,7 +79,7 @@ export const profileData = {
   ]
 };
 
-export const collegesData = [
+export const allCollegesData = [
   {
     id: "northwestern",
     name: "Northwestern University",
@@ -87,6 +87,8 @@ export const collegesData = [
     location: "Evanston, IL",
     type: "Private Research",
     fitCategory: "Most Selective",
+    applicationRound: "ED",
+    supplementalEssays: "3/3",
     cardTheme: "rgba(78, 42, 132, 0.15)",
     accentColor: "#4E2A84",
     image: "https://preview.redd.it/northwestern-university-v0-04czfd3dsrq51.jpg?width=1080&crop=smart&auto=webp&s=9585a7d139c14291356d8c50e2ed3ee92a99c20a",
@@ -120,6 +122,8 @@ export const collegesData = [
     location: "Houston, TX",
     type: "Private Research",
     fitCategory: "Most Selective",
+    applicationRound: "RD",
+    supplementalEssays: "2/3",
     cardTheme: "rgba(0, 32, 91, 0.15)",
     accentColor: "#00205B",
     image: "https://narratives.insidehighered.com/rice-university-new-leadership/assets/ogwocJ87n1/ricecampus-beautifulsunset2022-2560x1728.jpeg",
@@ -153,6 +157,8 @@ export const collegesData = [
     location: "Nashville, TN",
     type: "Private Research",
     fitCategory: "Most Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/1",
     cardTheme: "rgba(207, 181, 59, 0.15)",
     accentColor: "#866D4B",
     image: "https://admissions.vanderbilt.edu/wp-content/uploads/sites/4/2021/06/20181108JR003-scaled.jpg",
@@ -186,6 +192,8 @@ export const collegesData = [
     location: "Durham, NC",
     type: "Private Research",
     fitCategory: "Most Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/3",
     cardTheme: "rgba(0, 48, 135, 0.15)",
     accentColor: "#003087",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Bh2jYg4Vkt6XVCt8Uwjp9XKy1YIpFJLG5mkAvqwblVd_kG27d7jjEM4&s=10",
@@ -219,6 +227,8 @@ export const collegesData = [
     location: "Medford, MA",
     type: "Private Research",
     fitCategory: "Very Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/2",
     cardTheme: "rgba(65, 116, 141, 0.15)",
     accentColor: "#41748D",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0zR5Wi13FsjDuvJ9Yhwxrou19D3LjXVITC-TIzBvu-gveHW_8D3AwaEJC&s=10",
@@ -252,6 +262,8 @@ export const collegesData = [
     location: "St. Louis, MO",
     type: "Private Research",
     fitCategory: "Very Selective",
+    applicationRound: "EA",
+    supplementalEssays: "0/1",
     cardTheme: "rgba(165, 28, 48, 0.15)",
     accentColor: "#A51C30",
     image: "https://admissions.washu.edu/app/uploads/2025/05/MLTM-2254_0397-2.png",
@@ -285,6 +297,8 @@ export const collegesData = [
     location: "Atlanta, GA",
     type: "Private Research",
     fitCategory: "Very Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/2",
     cardTheme: "rgba(0, 33, 165, 0.15)",
     accentColor: "#0021A5",
     image: "https://collegesofdistinction.com/wp-content/uploads/2024/05/emory-university-2.jpeg",
@@ -318,6 +332,8 @@ export const collegesData = [
     location: "Davidson, NC",
     type: "Liberal Arts College",
     fitCategory: "Very Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/2",
     cardTheme: "rgba(218, 24, 24, 0.15)",
     accentColor: "#DA1818",
     image: "https://www.davidson.edu/sites/default/files/styles/big_16x9/public/2023-08/DavidsonCollegeAerialImages_004.jpg?h=7d33fdf7&itok=poM_hr5q",
@@ -351,6 +367,8 @@ export const collegesData = [
     location: "Swarthmore, PA",
     type: "Liberal Arts College",
     fitCategory: "Most Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/2",
     cardTheme: "rgba(144, 0, 28, 0.15)",
     accentColor: "#90001C",
     image: "https://www.swarthmore.edu/sites/default/files/styles/feature_callout/public/assets/images/meet-swarthmore/campus-academics-2.jpg.webp?itok=VoC2SAoy",
@@ -384,6 +402,8 @@ export const collegesData = [
     location: "Richmond, VA",
     type: "Liberal Arts College",
     fitCategory: "Selective",
+    applicationRound: "EA",
+    supplementalEssays: "0/1",
     cardTheme: "rgba(38, 63, 106, 0.15)",
     accentColor: "#263F6A",
     image: "https://www.usnews.com/dims4/USNEWS/26766ef/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F56%2F74%2Fcb0b6e5249c2a32d396ed32e91f6%2Faerialcampus.jpg",
@@ -417,6 +437,9 @@ export const collegesData = [
     location: "Amherst, MA",
     type: "Liberal Arts College",
     fitCategory: "Most Selective",
+    applicationRound: "RD",
+    supplementalEssays: "0/3",
+    hidden: true, // Oculto temporariamente para a apresentação
     cardTheme: "rgba(74, 38, 142, 0.15)",
     accentColor: "#4A268E",
     image: "https://highschool.latimes.com/wp-content/uploads/2016/02/aerial-photography-amerherst-college-1.jpeg",
@@ -450,6 +473,9 @@ export const collegesData = [
     location: "Cleveland, OH",
     type: "Private Research",
     fitCategory: "Selective",
+    applicationRound: "EA",
+    supplementalEssays: "0/3",
+    hidden: true, // Oculto temporariamente para a apresentação
     cardTheme: "rgba(10, 48, 85, 0.15)",
     accentColor: "#0A3055",
     image: "https://case.edu/static/7854c6a6c26018f289e608195b904c05/b49c8/about.jpg",
@@ -477,3 +503,7 @@ export const collegesData = [
     ]
   }
 ];
+
+// Active colleges for presentation (filters out colleges marked hidden: true)
+export const collegesData = allCollegesData.filter((college) => !college.hidden);
+

@@ -83,8 +83,15 @@ export default function Dashboard({ colleges, setCurrentIndex }) {
                 style={{ borderLeft: `3px solid ${college.accentColor}` }}
               >
                 <div className="dash-college-info">
-                  <span className="dash-college-name">{college.name}</span>
-                  <span className="dash-college-loc">{college.location} • {college.quickStats.acceptanceRate} Acceptance</span>
+                  <div className="dash-college-name-row">
+                    <span className="dash-college-name">{college.name}</span>
+                    <span className={`dash-round-pill round-${(college.applicationRound || 'RD').toLowerCase()}`}>
+                      {college.applicationRound || 'RD'}
+                    </span>
+                  </div>
+                  <span className="dash-college-loc">
+                    {college.location} • {college.quickStats.acceptanceRate} Acc. • Essays: {college.supplementalEssays || '0/3'}
+                  </span>
                 </div>
                 <ArrowRight className="dash-college-action" size={16} />
               </div>
@@ -110,8 +117,15 @@ export default function Dashboard({ colleges, setCurrentIndex }) {
                 style={{ borderLeft: `3px solid ${college.accentColor}` }}
               >
                 <div className="dash-college-info">
-                  <span className="dash-college-name">{college.name}</span>
-                  <span className="dash-college-loc">{college.location} • {college.quickStats.acceptanceRate} Acceptance</span>
+                  <div className="dash-college-name-row">
+                    <span className="dash-college-name">{college.name}</span>
+                    <span className={`dash-round-pill round-${(college.applicationRound || 'RD').toLowerCase()}`}>
+                      {college.applicationRound || 'RD'}
+                    </span>
+                  </div>
+                  <span className="dash-college-loc">
+                    {college.location} • {college.quickStats.acceptanceRate} Acc. • Essays: {college.supplementalEssays || '0/3'}
+                  </span>
                 </div>
                 <ArrowRight className="dash-college-action" size={16} />
               </div>
@@ -137,8 +151,15 @@ export default function Dashboard({ colleges, setCurrentIndex }) {
                 style={{ borderLeft: `3px solid ${college.accentColor}` }}
               >
                 <div className="dash-college-info">
-                  <span className="dash-college-name">{college.name}</span>
-                  <span className="dash-college-loc">{college.location} • {college.quickStats.acceptanceRate} Acceptance</span>
+                  <div className="dash-college-name-row">
+                    <span className="dash-college-name">{college.name}</span>
+                    <span className={`dash-round-pill round-${(college.applicationRound || 'RD').toLowerCase()}`}>
+                      {college.applicationRound || 'RD'}
+                    </span>
+                  </div>
+                  <span className="dash-college-loc">
+                    {college.location} • {college.quickStats.acceptanceRate} Acc. • Essays: {college.supplementalEssays || '0/3'}
+                  </span>
                 </div>
                 <ArrowRight className="dash-college-action" size={16} />
               </div>
